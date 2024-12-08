@@ -1,0 +1,13 @@
+.boritokep {
+    height: 450px; /* A borítókép magassága valószínűleg 300px kéne, de akkor nagyon levágódik Phil feje, szóval lehet kellene új kép*/
+    background-image: url('../img/borito/home.png');
+    background-size: cover; /* A kép arányosan lefedi az elemet */
+    background-position: top; /* Kép fentre igazítása, mert így kevésbé néz ki furán */
+    background-repeat: no-repeat; /* Ne ismételje a képet */
+    display: flex;
+
+}
+
+body {
+    background-color: #949235;
+}
