@@ -11,3 +11,27 @@
 body {
     background-color: #949235;
 }
+
+.container {
+    background-color: #f3f29d;
+    text-align: center;
+    width: 100%;
+}
+
+.card {
+    border: none;
+    display: inline; /* ezzel sikerült beállítani azt hogy a kártyát rendesen közepén legyenek a containerben*/
+}
+
+.card-img-top2 {
+    height: 400px; /* Egységes magasság */
+    object-fit: cover; /* A kép levágása, hogy illeszkedjen a magassághoz */
+}
+
+.card-text {
+    text-align: center;
+}  
+
+.card-text2 {
+    text-align: justify;
+}
