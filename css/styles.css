@@ -40,3 +40,9 @@ position: cover;
 .card-text2 {
     text-align: justify;
 } 
+.dijak{
+    text-align: left;
+}
+.dijak2{
+    float: left;
+}
