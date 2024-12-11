@@ -18,14 +18,19 @@ body {
     width: 100%;
 }
 
-.card {
-    border: none;
-    display: inline; /* ezzel sikerült beállítani azt hogy a kártyát rendesen közepén legyenek a containerben*/
+.film img {
+position: cover;
+
 }
 
 .card-img-top2 {
-    height: 400px; /* Egységes magasság */
-    object-fit: cover; /* A kép levágása, hogy illeszkedjen a magassághoz */
+    height: 500px; /* Egységes magasság  */
+
+}
+
+.card {
+    border: none;
+    display: block; /* ezzel sikerült beállítani azt hogy a kártyát rendesen közepén legyenek a containerben*/
 }
 
 .card-text {
@@ -34,4 +39,4 @@ body {
 
 .card-text2 {
     text-align: justify;
-}
+} 
