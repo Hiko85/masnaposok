@@ -1,0 +1,66 @@
+.boritokep {
+    height: 450px; /* A borítókép magassága valószínűleg 300px kéne, de akkor nagyon levágódik Phil feje, szóval lehet kellene új kép*/
+    background-image: url('../másnaposok-próba-web/img/masnaposok-home.jpg');
+    background-size: cover; /* A kép arányosan lefedi az elemet */
+    background-position: center; /* Kép középre igazítása */
+    background-repeat: no-repeat; /* Ne ismételje a képet */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+}
+
+body {
+    background-color: #949235;
+}
+
+.container {
+    background-color: #f3f29d;
+    text-align: center;
+    
+}
+
+.card {
+    border: none;
+    display: inline; /* ezzel sikerült beállítani azt hogy a kártyát rendesen közepén legyenek a containerben*/
+}
+
+.card-img-top2 {
+    height: 400px; /* Egységes magasság */
+    object-fit: cover; /* A kép levágása, hogy illeszkedjen a magassághoz */
+}
+
+.card-text {
+    text-align: center;
+}  
+
+.card-text2 {
+    text-align: justify;
+}
+
+#masnaposok1_plakat {
+    margin: 1rem;
+}
+
+#masnaposok1_leiras {
+    margin: 1rem;
+    text-align: justify;
+}
+
+#masnaposok1_cim {
+    margin: 1rem;
+}
+
+#masnaposok1_lista {
+    text-align: left;
+    list-style: none;
+}
+
+.kepafilmbol {
+    width: 400px;
+    margin: 0.75rem;
+}
