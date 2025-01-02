@@ -46,3 +46,45 @@ position: cover;
 .dijak2{
     float: left;
 }
+
+.masnaposok-3-h1 {
+    text-align: left;
+}
+.masnaposok-3-h2 {
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+}
+.carousel-item {
+    justify-content: center; /* Horizontális középre igazítás */
+} 
+
+.carousel-control-prev {
+    background-color: rgba(0, 0, 0, 0.5); /* Áttetsző fekete háttér */
+    width: 50px; /* Szélesebb kattintható sáv */
+    height: 100%; /* Fedi az egész karusszel magasságát */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Áttetsző fekete háttér */
+    width: 50px; /* Szélesebb kattintható sáv */
+    height: 100%; /* Fedi az egész carousel magasságát */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;}
+    
+    /* Áttetsző sáv hover-effekt */
+
+.custom-control:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Sötétebb háttér, ha az egér fölé kerül */
+}
