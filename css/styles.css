@@ -69,6 +69,19 @@ ul li{
     border-bottom: 1px dashed #949235;
     text-align: left;
 }
+a:visited{
+    color: #8B008B;
+}
+a:hover{
+    color: red;
+}
+a{
+    color: #949235;
+}
+.mainfooter{
+    margin-right: -0.8rem; 
+    margin-left: -0.8rem;
+}
 .masnaposok-3-h1 {
     text-align: left;
 }
