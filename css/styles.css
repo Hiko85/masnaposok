@@ -79,6 +79,8 @@ a{
     color: #949235;
 }
 .mainfooter{
+    text-align: center;
+    line-height: 3rem;
     margin-right: -0.8rem; 
     margin-left: -0.8rem;
 }
