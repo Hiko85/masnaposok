@@ -40,11 +40,12 @@ position: cover;
 .card-text2 {
     text-align: justify;
 } 
+
+ul li{
+    line-height: 2.5rem;
+}
 .dijak{
     text-align: left;
-}
-.dijak2{
-    float: left;
 }
 .phillips{
     width: 80%;
@@ -64,9 +65,9 @@ position: cover;
     padding-right: 12rem;
 }
 
-#todd{
+.todd{
     border-bottom: 1px dashed #949235;
-    text-align: center;
+    text-align: left;
 }
 .masnaposok-3-h1 {
     text-align: left;
