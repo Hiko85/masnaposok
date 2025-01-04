@@ -85,7 +85,7 @@ p {
 .carousel-control-prev {
     background-color: rgba(0, 0, 0, 0.5); /* Áttetsző fekete háttér */
     width: 50px; /* Szélesebb kattintható sáv */
-    height: 100%; /* Fedi az egész karusszel magasságát */
+    height: 100%; /* Fedi az egész carousel magasságát */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,4 +108,8 @@ p {
 
 .custom-control:hover {
     background-color: rgba(0, 0, 0, 0.3); /* Sötétebb háttér, ha az egér fölé kerül */
+}
+
+footer {
+    background-color: #dbb432;
 }
