@@ -7,6 +7,20 @@
     display: flex;
 
 }
+header{
+    height: 500px;
+    position: relative;
+    background-image: url(../img/masnaposok-2/masnaposok2_headerbe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cim{
+    position: absolute;   
+    left: 0;
+    bottom: 0;
+    color: white;
+    border-left: 2px solid white;
+}
 
 body {
     background-color: #949235;
