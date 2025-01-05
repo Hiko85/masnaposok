@@ -21,6 +21,7 @@ header{
     color: white;
     border-left: 2px solid white;
     font-family: Montserrat; /*próba*/
+    text-transform: uppercase;
 }
 
 body {
