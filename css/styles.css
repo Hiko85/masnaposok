@@ -7,13 +7,7 @@
     display: flex;
 
 }
-header{
-    height: 500px;
-    position: relative;
-    background-image: url(../img/masnaposok-2/masnaposok2_headerbe.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 body {
     background-color: #949235;
 }
@@ -139,19 +133,78 @@ footer {
     line-height: 3rem;
 }
 /*Masnaposok 2 további specifikációk*/
+header{
+    height: 500px;
+    position: relative;
+    background-image: url(../img/masnaposok-2/masnaposok2_headerbe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .cim{
     position: absolute;   
     left: 0;
     bottom: 0;
     color: white;
-    border-left: 2px solid white;
-    font-family: Montserrat; /*próba*/
+    padding-left: 20px;
+    font-family: Montserrat; 
     text-transform: uppercase;
 }
 .cimsoraim{
+    font-family: Montserrat;
+    text-align: left;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 950px;
     margin: 30px;
     padding-left: 15px;
+}
+.vilagos{
+    color: white;
+    border-left: 2px solid white;
+}
+.sotet{
+    color: black;
+    border-left: 2px solid black;
+}
+.table {
+    border-collapse: collapse;
+}
+.table-bordered th, 
+.table-bordered td,
+.table-bordered thead th {
+    border: 1px solid black; 
+}
+#tortenet p,#tortenet h4, #szereplok{
+    font-family: Montserrat;
+}
+#tortenet, #videok,#galeria{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#tortenet {
+    color: white;
+    text-align: justify;
+}
+h4{
+    text-transform: uppercase;
+}
+.mainfooter2{
+    text-align: center;
+    line-height: 3rem;
+    margin-right: -1rem; 
+    margin-left: -1rem;
+    color: white;
+    background-color: black;
+}
+.cselekmeny{
+    line-height: 2.5rem;
+}
+.tortenet_adatok{
+    line-height: 1.5rem;
+}
+#videok{
+    background-size: cover;
+}
+#galeria{
+    background-repeat: no-repeat;
+    background-size: cover;
 }
