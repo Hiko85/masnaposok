@@ -14,16 +14,6 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.cim{
-    position: absolute;   
-    left: 0;
-    bottom: 0;
-    color: white;
-    border-left: 2px solid white;
-    font-family: Montserrat; /*próba*/
-    text-transform: uppercase;
-}
-
 body {
     background-color: #949235;
 }
@@ -147,4 +137,21 @@ footer {
     margin-right: -0.8rem; 
     margin-left: -0.8rem;
     line-height: 3rem;
+}
+/*Masnaposok 2 további specifikációk*/
+.cim{
+    position: absolute;   
+    left: 0;
+    bottom: 0;
+    color: white;
+    border-left: 2px solid white;
+    font-family: Montserrat; /*próba*/
+    text-transform: uppercase;
+}
+.cimsoraim{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 950px;
+    margin: 30px;
+    padding-left: 15px;
 }
