@@ -1,6 +1,6 @@
 .boritokep {
-    height: 450px; /* A borítókép magassága valószínűleg 300px kéne, de akkor nagyon levágódik Phil feje, szóval lehet kellene új kép*/
-    background-image: url('../img/borito/home.png');
+    height: 350px; /* A borítókép magassága valószínűleg 300px kéne, de akkor nagyon levágódik Phil feje, szóval lehet kellene új kép*/
+    background-image: url('../img/borito/home-modified.png');
     background-size: cover; /* A kép arányosan lefedi az elemet */
     background-position: top; /* Kép fentre igazítása, mert így kevésbé néz ki furán */
     background-repeat: no-repeat; /* Ne ismételje a képet */
@@ -75,6 +75,8 @@ a{
     margin-right: -0.8rem; 
     margin-left: -0.8rem;
 }
+
+
 .masnaposok-3-h1 {
     text-align: left;
 }
@@ -113,17 +115,29 @@ p {
     right: 0;}
     
     /* Áttetsző sáv hover-effekt */
-
 .custom-control:hover {
     background-color: rgba(0, 0, 0, 0.3); /* Sötétebb háttér, ha az egér fölé kerül */
 }
 
 footer {
-    background-color: #dbb432;
+    background-color: #090b0e;
+    color: white;
     margin-right: -0.8rem; 
     margin-left: -0.8rem;
     line-height: 3rem;
 }
+
+.masnaposok-3-hatter {
+    background-color: #849a91;
+}
+.masnaposok-3-body {
+    background-color: #3a5661;
+}
+
+.masnaposok-3-link-color {
+    color: #12293c;
+}
+
 /*Masnaposok 2 további specifikációk*/
 header{
     height: 500px;
