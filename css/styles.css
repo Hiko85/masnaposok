@@ -70,13 +70,14 @@ a{
     color: #949235;
 }
 .mainfooter{
+    background-color: #dbb432;
     text-align: center;
     line-height: 3rem;
     margin-right: -0.8rem; 
     margin-left: -0.8rem;
 }
 
-
+/*másnaposok 3 specifikáció*/
 .masnaposok-3-h1 {
     text-align: left;
 }
@@ -91,7 +92,6 @@ p {
 .carousel-item {
     justify-content: center; /* Horizontális középre igazítás */
  }
-
 .carousel-control-prev {
     background-color: rgba(0, 0, 0, 0.5); /* Áttetsző fekete háttér */
     width: 50px; /* Szélesebb kattintható sáv */
@@ -118,22 +118,19 @@ p {
 .custom-control:hover {
     background-color: rgba(0, 0, 0, 0.3); /* Sötétebb háttér, ha az egér fölé kerül */
 }
-
-footer {
+.masnaposok-3-footer {
     background-color: #090b0e;
     color: white;
     margin-right: -0.8rem; 
     margin-left: -0.8rem;
     line-height: 3rem;
 }
-
 .masnaposok-3-hatter {
     background-color: #849a91;
 }
 .masnaposok-3-body {
     background-color: #3a5661;
 }
-
 .masnaposok-3-link-color {
     color: #12293c;
 }
