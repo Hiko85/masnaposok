@@ -89,9 +89,10 @@ a{
 p {
     text-align: justify;
 }
+
 .carousel-item {
     justify-content: center; /* Horizontális középre igazítás */
-} 
+ }
 
 .carousel-control-prev {
     background-color: rgba(0, 0, 0, 0.5); /* Áttetsző fekete háttér */
