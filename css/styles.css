@@ -156,10 +156,10 @@ p {
 .carousel {
     justify-content: center;
     /* A carouselben lévő elemeket vízszintesen középre igazítja */
-    height: 450px;
-    /*A carousel elem magasságát 500 pixelre állítja.*/
-    width: auto;
-    /*Az elem szélességét automatikusan a tartalomhoz igazítja, miközben megőrzi az arányokat.*/
+    /*height: 450px;
+    A carousel elem magasságát 500 pixelre állítja.*/
+    /*width: auto;
+    Az elem szélességét automatikusan a tartalomhoz igazítja, miközben megőrzi az arányokat.*/
     object-fit: cover;
     /*Az elemben lévő kép vagy tartalom úgy kerül megjelenítésre, hogy arányosan kitölti az egész konténert (a kép esetleges levágásával).*/
 }
