@@ -529,6 +529,7 @@ h4 {
     background-size: cover;
 }
 
+
 #galeria {
     /*A háttérkép nem ismétlődik*/
     background-repeat: no-repeat;
@@ -540,9 +541,9 @@ h4 {
 
     /*Az elem maximális magassága 100% lesz, ami azt jelenti, hogy nem nőhet nagyobbra, mint a szülőelem.*/
     max-height: 100%;
-    /*Az elem blokk szintű megjelenítést kap, ami azt jelenti, szélesség teljes egészét kitölti.*/
-    display: block;
-    /*a tartalom középre igazítása */
+    /* Aktiválja a Flexboxot */
+    display: flex;
+    /*Vízszintes középre igazítás */
     justify-content: center;
      /* Függőleges középre igazítás */
     align-items: center;
