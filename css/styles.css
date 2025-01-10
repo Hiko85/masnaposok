@@ -1,158 +1,405 @@
+/*------------- Másnaposok FŐOLDAL specifikáció --------------------*/
 .boritokep {
-    height: 350px; /* A borítókép magassága valószínűleg 300px kéne, de akkor nagyon levágódik Phil feje, szóval lehet kellene új kép*/
+    height: 350px;
+    /* A borítókép magassága valószínűleg 300px kéne, de akkor nagyon levágódik Phil feje, szóval lehet kellene új kép*/
     background-image: url('../img/borito/home-modified.png');
-    background-size: cover; /* A kép arányosan lefedi az elemet */
-    background-position: top; /* Kép fentre igazítása, mert így kevésbé néz ki furán */
-    background-repeat: no-repeat; /* Ne ismételje a képet */
+    background-size: cover;
+    /* A kép arányosan lefedi az elemet */
+    background-position: top;
+    /* Kép fentre igazítása, mert így kevésbé néz ki furán */
+    background-repeat: no-repeat;
+    /* Ne ismételje a képet */
     display: flex;
 
 }
 
 body {
-    background-color: #949235;
+    background-color: #572823;
+    /*A teljes oldal háttérszínét állítja be a főoldalon. */
 }
 
 .container {
-    background-color: #f3f29d;
+    background-color: #d7997f;
+    /*A konténer elem háttérszínét állítja be a főoldalon */
     text-align: center;
+    /*Az elem belsejében lévő szövegeket középre igazítja. */
     width: 100%;
+    /*Az elem szélességét a szülőelem teljes szélességéhez igazítja.*/
 }
 
 .card-img-top2 {
-    height: 500px; /* Egységes magasság  */
-
+    height: 500px;
+    /* Az elem magasságát egységesen 500 pixelre állítja.  */
 }
 
 .card {
     border: none;
-    display: block; /* ezzel sikerült beállítani azt hogy a kártyát rendesen közepén legyenek a containerben*/
+    /*Az elem keretét eltávolítja.*/
+    display: block;
+    /* ezzel sikerült beállítani azt hogy a kártyák rendesen közepén legyenek a konténerben*/
 }
 
 .card-text {
     text-align: center;
-}  
+    /*Az elem belsejében lévő szövegeket középre igazítja.*/
+}
 
 .card-text2 {
     text-align: justify;
-} 
+    /*Az elem belsejében lévő szövegeket sorkizártra állítja.*/
+}
 
 ul li {
     line-height: 2.5rem;
+    /*A listaelemek közötti sortávolságot 2.5 rem egységre állítja. Ez javítja az olvashatóságot, nagyobb függőleges térközt biztosítva.*/
 }
-.dijak{
+
+.dijak {
     text-align: left;
+    /*Az elem belsejében lévő szöveget balra igazítja.*/
 }
-.phillips{
-    width: 80%; 
+
+.phillips {
+    width: 80%;
+    /*Az elem szélességét a szülőelem szélességének 80%-ára állítja.*/
     border-radius: 30px;
-    border: 3px solid #949235; 
+    /*A sarkait 30 pixeles ívességgel lekerekíti.*/
+    border: 3px solid #572823;
+    /*Az elemnek egy 3 pixel vastag, egyszínű szegélyt ad.*/
     margin: 1rem auto 1rem auto;
-   text-align: justify;
+    /*Az elem tetején és alján 1 rem térközt ad, a bal és jobb oldalon pedig középre igazítja az elemet.*/
+    text-align: justify;
+    /*Az elem szövegét sorkizárttá állítja.*/
 }
-.phillips img{
+
+.phillips img {
     width: 170px;
+    /*A benne lévő kép szélességét 170 pixelre korlátozza.*/
     float: right;
+    /*A képet a szülőelem jobb oldalára igazítja, miközben a szöveg körbefutja.*/
     padding-top: 1rem;
+    /*A kép tetejéhez 1 rem méretű belső margót ad.*/
     padding-left: 1rem;
+    /*A kép bal oldalához 1 rem méretű belső margót ad.*/
 }
 
-.todd{
-    border-bottom: 1px dashed #949235;
-    text-align: left; /*text-align: left;*/
+.todd {
+    border-bottom: 1px dashed #572823;
+    /*Az elem alá egy 1 pixel vastag, szaggatott vonalat rajzol a megadott színnel színnel).*/
+    text-align: left;
+    /*A szöveget balra igazítja.*/
 }
-a:visited{
-    color: #8B008B;
+
+.home:visited {
+    color: #572823;
+    /*A link színét a megadott színre állítja.*/
+    text-decoration: none;
 }
-a:hover{
+
+.home:hover {
     color: red;
-}
-a{
-    color: #949235;
-}
-.mainfooter{
-    background-color: #dbb432;
-    text-align: center;
-    line-height: 3rem;
-    margin-right: -0.8rem; 
-    margin-left: -0.8rem;
+    /*Az egérrel a linkre állva, a link színét pirosra állítja.*/
 }
 
-/*másnaposok 3 specifikáció*/
+.home {
+    color: #967f7b;
+    /*A link alapértelmezett színét állíthatjuk itt be. */
+}
+
+/*A linkek színe az aloldalokon: */
+a:visited {
+    color: #c770c7;
+    /*A meglátogatott linkek színét a megadott színre állítja.*/
+}
+
+a:hover {
+    color: red;
+    /*Az egérrel a linkre állva, a link színét pirosra állítja.*/
+}
+
+a {
+    color: #949235;
+    /*A link alapértelmezett színét állíthatjuk itt be. */
+}
+
+.mainfooter {
+    background-color: #251c27;
+    color: #ffffff;
+    /*A főoldal láblécének háttérszínét a megadott színre állítja.*/
+    text-align: center;
+    /*A lábléc szövegét középre igazítja.*/
+    line-height: 3rem;
+    /*A lábléc szövegének sorközeit 3 rem magasra állítja, ami növeli a függőleges térközt.*/
+    margin-right: -0.8rem;
+    /*A láblécet a szülőelem jobb szélén 0.8 rem-mel túlnyújtja.*/
+    margin-left: -0.8rem;
+    /*A láblécet a szülőelem bal szélén 0.8 rem-mel túlnyújtja.*/
+}
+
+/*-------------------------------------------------------------------------*/
+/*------------- Másnaposok 3 specifikáció --------------------*/
 .masnaposok-3-h1 {
     text-align: left;
+    /*a h1-es szöveget balra igazítja*/
 }
+
 .masnaposok-3-h2 {
     text-align: left;
+    /*a h2-es szöveget balra igazítja*/
 }
 
 p {
     text-align: justify;
+    /*Az összes bekezdés szövegét sorkizártra állítja, így a szöveg esztétikusan kitölti a rendelkezésre álló helyet.*/
+}
+
+.carousel {
+    justify-content: center;
+    /* A carouselben lévő elemeket vízszintesen középre igazítja */
+    height: 450px;
+    /*A carousel elem magasságát 500 pixelre állítja.*/
+    width: auto;
+    /*Az elem szélességét automatikusan a tartalomhoz igazítja, miközben megőrzi az arányokat.*/
+    object-fit: cover;
+    /*Az elemben lévő kép vagy tartalom úgy kerül megjelenítésre, hogy arányosan kitölti az egész konténert (a kép esetleges levágásával).*/
 }
 
 .carousel-item {
-    justify-content: center; /* Horizontális középre igazítás */
- }
-.carousel-control-prev {
-    background-color: rgba(0, 0, 0, 0.5); /* Áttetsző fekete háttér */
-    width: 50px; /* Szélesebb kattintható sáv */
-    height: 100%; /* Fedi az egész carousel magasságát */
-    display: flex;
-    align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.carousel-control-next {
-    background-color: rgba(0, 0, 0, 0.5); /* Áttetsző fekete háttér */
-    width: 50px; /* Szélesebb kattintható sáv */
-    height: 100%; /* Fedi az egész carousel magasságát */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 0;}
-    
-    /* Áttetsző sáv hover-effekt */
-.custom-control:hover {
-    background-color: rgba(0, 0, 0, 0.3); /* Sötétebb háttér, ha az egér fölé kerül */
-}
-.masnaposok-3-footer {
-    background-color: #090b0e;
-    color: white;
-    margin-right: -0.8rem; 
-    margin-left: -0.8rem;
-    line-height: 3rem;
-}
-.masnaposok-3-hatter {
-    background-color: #849a91;
-}
-.masnaposok-3-body {
-    background-color: #3a5661;
-}
-.masnaposok-3-link-color {
-    color: #12293c;
+    /* Horizontális középre igazítás */
 }
 
+.masnaposok-3-valto {
+    position: relative;
+    /* Pozícionálás biztosítása az elem saját, normál helyzetéhez viszonyítva */
+    height: 100%;
+}
+
+.masnaposok-3-valto img {
+    position: absolute;
+    /*Az elem a legközelebbi pozícionált szülőelemhez viszonyított elhelyezkedése.*/
+    /* Abszolút pozícionálás */
+    top: 50%;
+    /* Kép tetejének igazítása a középvonalhoz */
+    left: 50%;
+    /* Kép bal szélének középvonalhoz igazítása */
+    transform: translate(-50%, -50%);
+    /* Teljes középre igazítás */
+    max-height: 100%;
+    /* Kép magasságának igazítása a konténerhez. */
+    max-width: 100%;
+    /* Kép szélességének igazítása a konténerhez. */
+    margin: auto;
+    /* Biztosítja a helyes igazítást.  */
+    object-fit: contain;
+    /* A kép teljes mértékben látszik torzítás nélkül */
+}
+
+.carousel-control-prev {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Az "előző gomb" háttérszíne áttetsző fekete (50%-os átlátszósággal). */
+    width: 50px;
+    /* Az elem szélességét 50 pixelre állítja, így a kattintható sáv szélesebb és könnyebben használható.*/
+    height: 100%;
+    /* Fedi az egész carousel magasságát */
+    display: flex;
+    /* A rugalmas dobozmodellt használja, hogy a belső tartalom elrendezése egyszerűbb legyen. */
+    align-items: center;
+    /* A belső tartalmat (pl. a nyilacskát) függőlegesen középre igazítja. */
+    justify-content: center;
+    /* A belső tartalmat vízszintesen is középre igazítja. */
+    position: absolute;
+    /* Az elem pozícióját a szülőelemhez képest abszolút módon állítja be. */
+    top: 0;
+    /* Az elem felső széle a szülőelem tetejéhez igazodik. */
+    left: 0;
+    /* Az elem bal széle a szülőelem bal oldalához igazodik. */
+}
+
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Az "következő gomb" háttérszíne áttetsző fekete (50%-os átlátszósággal).  */
+    width: 50px;
+    /* Az elem szélességét 50 pixelre állítja, így a kattintható sáv szélesebb és könnyebben használható. */
+    height: 100%;
+    /* Fedi az egész carousel magasságát */
+    display: flex;
+    /* A rugalmas dobozmodellt használja, hogy a belső tartalom elrendezése egyszerűbb legyen. */
+    align-items: center;
+    /* A belső tartalmat (pl. a nyilacskát) függőlegesen középre igazítja. */
+    justify-content: center;
+    /* A belső tartalmat vízszintesen is középre igazítja. */
+    position: absolute;
+    /* Az elem pozícióját a szülőelemhez képest abszolút módon állítja be. */
+    top: 0;
+    /* Az elem felső széle a szülőelem tetejéhez igazodik. */
+    right: 0;
+    /* Az elem bal széle a szülőelem jobb oldalához igazodik. */
+}
+
+/* Áttetsző sáv hover-effekt */
+.custom-control:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Sötétebb háttér, ha az egér fölé kerül */
+}
+
+.masnaposok-3-footer {
+    background-color: #090b0e;
+    /*a 3. rész oldalon a footer hátterének módosítása*/
+    color: white;
+    /*a 3. rész oldalon a footer betűszínének módosítása*/
+    margin-right: -0.8rem;
+    /*A jobb oldali margó negatív értéke kinyújtja a láblécet a normál tartalom területén túl, hogy teljesen kitöltse az oldal széleit.*/
+    margin-left: -0.8rem;
+    /*A bal oldalon is kiterjeszti a láblécet az oldal széléig. Ez az igazítás és a teljes szélesség kihangsúlyozására szolgál.*/
+    line-height: 3rem;
+    /*A szöveg sorainak magassága 3 rem, ami kényelmes távolságot biztosít, megkönnyítve az olvasást és az esztétikus megjelenést.*/
+}
+
+.masnaposok-3-hatter {
+    background-color: #849a91;
+    /*a 3. rész oldalon a konténer színének módosítása*/
+}
+
+.masnaposok-3-body {
+    background-color: #3a5661;
+    /*a 3. rész oldalon a body háttér színének módosítása*/
+}
+
+.masnaposok-3-link-color {
+    color: #12293c;
+    /*hivatkozás színének módosítása*/
+}
+
+.masnaposok-3-link-color:visited {
+    color: #3a5661;
+    /*megnyitott hivatkozás színének módosítása*/
+}
+
+/* való élet szereplős kártya konténer formázás */
+.flip-card-body {
+    perspective: 1000px;
+    /* 3D hatás: térhatás illúziójának megteremtése */
+    position: relative;
+    /* A kártyák pozíciójának meghatározása a szülőelemhez képest */
+    display: flex;
+    /* Rugalmas doboz használata a tartalom igazításához */
+    flex-direction: column;
+    /* A tartalom függőleges elrendezése */
+    justify-content: center;
+    /* Tartalom középre igazítása függőlegesen */
+    align-items: center;
+    /* Tartalom középre igazítása vízszintesen */
+    overflow: hidden;
+    /* A szülőn kívül eső tartalom elrejtése */
+    border: none;
+    /* Keret eltávolítása */
+    border-radius: 10px;
+    /* Lekerekített sarkok hozzáadása */
+    transition: transform 0.6s;
+    /* Átfordulás animációjának sebessége */
+    background-color: #ffffff;
+    /* Háttér szín fehér */
+}
+
+.flip-card-inner {
+    position: relative;
+    /* A tartalom relatív pozicionálása */
+    width: 100%;
+    /* A belső tartalom szélessége kitölti a szülőelemét */
+    transform-style: preserve-3d;
+    /* 3D hatás megtartása */
+    transition: transform 0.6s;
+    /* Az átfordulás sebessége */
+    height: 500px;
+    /* Fix magasság */
+}
+
+/* Előlap és Hátlap alapbeállítások */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    /* Az elemek egymásra helyezése */
+    top: 0;
+    /* A tartalom a szülő tetejéhez igazítva */
+    left: 0;
+    /* A tartalom a szülő bal széléhez igazítva */
+    width: 100%;
+    /* Szélesség kitölti a szülőelemét */
+    height: 100%;
+    /* Magasság kitölti a szülőelemét */
+    backface-visibility: hidden;
+    /* Csak az aktuális oldal látszik átforduláskor */
+    display: flex;
+    /* Rugalmas doboz a tartalomhoz */
+    flex-direction: column;
+    /* Tartalom függőleges elrendezése */
+    justify-content: center;
+    /* Tartalom középre igazítása függőlegesen */
+    align-items: center;
+    /* Tartalom középre igazítása vízszintesen */
+}
+
+.flip-card-front img,
+.flip-card-back img {
+    width: 100%;
+    /* Kép szélessége a szülőelemhez igazítva */
+    height: 500px;
+    /* Fix magasság */
+    max-height: 100%;
+    /* A kép magassága nem haladja meg a szülőelem magasságát */
+    object-fit: cover;
+    /* A kép arányosan kitölti a rendelkezésre álló helyet */
+    display: block;
+    /* Az inline viselkedés megszüntetése */
+}
+
+/* Hover állapot: Az átfordulás vezérlése */
+.flip-card-body:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    /* 180 fokos forgatás az Y tengely mentén */
+}
+
+/* Hátlap elforgatása */
+.flip-card-back {
+    transform: rotateY(180deg);
+    /* A hátlap 180 fokkal elforgatva helyezkedik el alapállapotban */
+}
+
+.flip-card-text {
+    text-align: center;
+    /* Szöveg középre igazítása */
+}
+
+/*Mobil nézetben a flip-card-inner ne forgasson, hanem egyszerűen jelenjen meg a hátlap tartalma, mivel a mobilon nincs egér, amit a kép felé lehetne vinni:*/
+@media (max-width: 576px) {
+    .flip-card-inner {
+        transform: rotateY(180deg);
+        /* Csak a hátlap látszik */
+    }
+}
+
+/*-------------------------------------------------------------------------*/
 /*Masnaposok 2 további specifikációk*/
-header{
+header {
     height: 500px;
     position: relative;
     background-image: url(../img/masnaposok-2/masnaposok2_headerbe.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.cim{
-    position: absolute;   
+
+.cim {
+    position: absolute;
     left: 0;
     bottom: 0;
     color: white;
     padding-left: 20px;
-    font-family: Montserrat; 
+    font-family: Montserrat;
     text-transform: uppercase;
 }
-.cimsoraim{
+
+.cimsoraim {
     font-family: Montserrat;
     text-align: left;
     text-transform: uppercase;
@@ -160,7 +407,8 @@ header{
     margin: 30px;
     padding-left: 15px;
 }
-.cimsoraim2{
+
+.cimsoraim2 {
     color: black;
     font-family: Montserrat;
     text-align: left;
@@ -169,56 +417,108 @@ header{
     margin: 30px;
     padding-left: 15px;
 }
-.vilagos{
+
+.vilagos {
     color: white;
     border-left: 2px solid white;
 }
-.sotet{
+
+.sotet {
     color: black;
     border-left: 2px solid black;
 }
+
 .table {
     border-collapse: collapse;
 }
-.table-bordered th, 
+
+.table-bordered th,
 .table-bordered td,
 .table-bordered thead th {
-    border: 1px solid black; 
+    border: 1px solid black;
 }
-#tortenet p,#tortenet h4, #szereplok{
+
+#tortenet p,
+#tortenet h4,
+#szereplok {
     font-family: Montserrat;
 }
-#tortenet, #videok,#galeria{
+
+#tortenet,
+#videok,
+#galeria {
     background-color: rgba(0, 0, 0, 0.9);
 }
-#megtekintheto, #szereplok{
+
+#megtekintheto,
+#szereplok {
     background-color: #f3f29d;
 }
+
 #tortenet {
     color: white;
     text-align: justify;
 }
-h4{
+
+h4 {
     text-transform: uppercase;
 }
-.mainfooter2{
+
+.mainfooter2 {
     text-align: center;
     line-height: 3rem;
-    margin-right: -1rem; 
+    margin-right: -1rem;
     margin-left: -1rem;
     color: white;
     background-color: black;
 }
-.cselekmeny{
+
+.cselekmeny {
     line-height: 2.5rem;
 }
-.tortenet_adatok{
+
+.tortenet_adatok {
     line-height: 1.5rem;
 }
-#videok{
+
+#videok {
     background-size: cover;
 }
-#galeria{
+
+#galeria {
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.galeria {
+    position: relative;
+    /* Pozícionálás biztosítása az elem saját, normál helyzetéhez viszonyítva */
+    max-height: 100%;
+    display: block;
+    justify-content: center;
+}
+
+
+
+
+/*-------------------------------------------------------------------------*/
+/*másnaposok 1 speci*/
+.masnaposok-1-footer {
+    background-color: #090b0e;
+    color: white;
+    margin-right: -0.8rem;
+    margin-left: -0.8rem;
+    line-height: 3rem;
+}
+
+.masnaposok-1-hatter {
+    background-color: #a3a3af;
+}
+
+.masnaposok-1-body {
+    background-color: #393337;
+}
+
+.masnaposok-1-link-color {
+    color: #12293c;
 }
