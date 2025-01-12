@@ -393,6 +393,7 @@ header {
     background-repeat: no-repeat;
     /* A háttérkép teljesen kitölti a konténer szélességét és magasságát, megtartva az arányokat, a kép nem torzul */
     background-size: cover;
+    margin: 0;
 }
 
 .cim {
