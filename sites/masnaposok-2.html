@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark"> <!--#002f6c-->
+    <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Főoldal</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -94,10 +94,14 @@
         <div class="row p-3" id="megtekintheto">
             <h2 class="sotet cimsoraim"><b>Megtekinthető</b></h2>
             <div class="col-12 col-md-4 pb-3">
+                <!--noopener -Megakadályozza, hogy az újonnan megnyitott oldal (target) hozzáférjen a nyitó oldal (origin) objektumához-->
+                <!---noreferrer: Megakadályozza, hogy a böngésző információt küldjön a nyitó oldalról az új oldalra (pl. a referrer URL-t).-->
                 <a href="https://www.apple.com/tv/" target="_blank" rel="noopener noreferrer">
+                    <!--overflow: hidden elrejti tartalom túlnyúló részét,height:auto elem magassága automatikusan beállításra kerül a tartalom magasságának megfelelően-->
                     <div class="img-container px-4 w-100" style="overflow: hidden; height: auto;">
                         <img src="../img/masnaposok-2/apple-tv-for-windows.png" alt="Apple tv" class="rounded w-100"
-                            title="Click for the link" style="object-fit: cover;">
+                            title="Click for the link"
+                            style="object-fit: cover;"><!--kép kitölti rendelkezésre álló teret-->
                     </div>
                 </a>
             </div>
@@ -255,22 +259,24 @@
         <div class="row p-3" id="galeria">
             <h2 class="vilagos cimsoraim"><b>galéria</b></h2>
             <div class="col-12">
-                <div id="carouselExampleFade" class="carousel masnaposok-valto-fo slide carousel-fade "
-                    style="max-width: 800px; margin: 0 auto;">
-                    <div class="carousel-inner h-100">
+                <div id="carouselExampleFade" class="carousel masnaposok-valto-fo slide carousel-fade"
+                    style="max-width: 100%; margin: 0 auto;">
+                    <div class="carousel-inner" style="height: 600px;">
                         <div class="carousel-item active">
-                            <img src="../img/masnaposok-2/masnaposok_motocsonakos.jpg" class="d-block w-100"
-                                alt="motorcsonakos">
+                            <img src="../img/masnaposok-2/masnaposok_motocsonakos.jpg" class="d-block w-100 h-100"
+                                alt="motorcsonakos" style="object-fit: cover;">
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/masnaposok-2/masnaposok2_sracok.jpg" class="d-block w-100" alt="sracok">
+                            <img src="../img/masnaposok-2/masnaposok2_sracok.jpg" class="d-block w-100 h-100"
+                                alt="sracok" style="object-fit: cover;">
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/masnaposok-2/masnaposok2_telefonos.jpg" class="d-block w-100"
-                                alt="telefonos">
+                            <img src="../img/masnaposok-2/masnaposok2_telefonos.jpg" class="d-block w-100 h-100"
+                                alt="telefonos" style="object-fit: cover;">
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/masnaposok-2/masnapsok2_lany.jpg" class="d-block w-100" alt="talalkozo">
+                            <img src="../img/masnaposok-2/masnapsok2_lany.jpg" class="d-block w-100 h-100"
+                                alt="talalkozo" style="object-fit: cover;">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"

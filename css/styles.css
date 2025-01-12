@@ -393,6 +393,7 @@ header {
     background-repeat: no-repeat;
     /* A háttérkép teljesen kitölti a konténer szélességét és magasságát, megtartva az arányokat, a kép nem torzul */
     background-size: cover;
+    /*(felül, alul, balra, jobbra) 0 margó*/
     margin: 0;
 }
 
@@ -477,7 +478,9 @@ header {
     /* Betűtípus Montserrat-ra */
     font-family: Montserrat;
 }
-
+.cimsoraim2 {
+    visibility: hidden; /* Az elem láthatatlan, de a helye megmarad */
+}
 #tortenet,
 #videok,
 #galeria {
@@ -502,7 +505,7 @@ h4 {
     /*szöveget nagybetűsre*/
     text-transform: uppercase;
 }
-
+/*Ez az első verzóhoz való, meghagyom ha esetleg változtatnánk*/
 .mainfooter2 {
     /*A szöveg középre igazítása.*/
     text-align: center;
@@ -515,8 +518,10 @@ h4 {
     /*A szöveg színe fehér*/
     color: white;
     /*A háttér színe fekete.*/
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
 }
+
+
 /*A .cselekmeny osztályú elem sorainak magassága 2.5 rem.*/
 .cselekmeny {
     line-height: 2.5rem;
@@ -525,34 +530,6 @@ h4 {
 .tortenet_adatok {
     line-height: 1.5rem;
 }
-/*A #videok azonosítójú elem háttérképe a teljes elem területét lefedi, arányait megtartva.*/
-#videok {
-    background-size: cover;
-}
-
-
-#galeria {
-    /*A háttérkép nem ismétlődik*/
-    background-repeat: no-repeat;
-    /*A háttérkép a teljes elem területét lefedi, arányait megtartva.*/
-    background-size: cover;
-}
-
-.galeria {
-
-    /*Az elem maximális magassága 100% lesz, ami azt jelenti, hogy nem nőhet nagyobbra, mint a szülőelem.*/
-    max-height: 100%;
-    /* Aktiválja a Flexboxot */
-    display: flex;
-    /*Vízszintes középre igazítás */
-    justify-content: center;
-     /* Függőleges középre igazítás */
-    align-items: center;
-
-}
-
-
-
 
 /*-------------------------------------------------------------------------*/
 /*másnaposok 1 speci*/
