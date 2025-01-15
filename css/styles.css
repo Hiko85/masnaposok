@@ -9,7 +9,8 @@
     /* Kép fentre igazítása, mert így kevésbé néz ki furán */
     background-repeat: no-repeat;
     /* Ne ismételje a képet */
-    display: flex;
+    display: flex; 
+    /* tartalom automatikusan igazodjon a rendelkezésre álló helyhez*/
 
 }
 
@@ -382,124 +383,153 @@ p {
 /*-------------------------------------------------------------------------*/
 /*Masnaposok 2 további specifikációk*/
 header {
+    /* A header elem magasságát 500px-re állítja */
     height: 500px;
+    /* A header pozícióját relatívra állítja, lehetővé téve a benne lévő elemek pozicionálását */
     position: relative;
+    /* A háttérkép beállítása a megadott elérési úton lévő képre */
     background-image: url(../img/masnaposok-2/masnaposok2_headerbe.jpg);
+     /* A háttérkép ismétlésének megakadályozása */
     background-repeat: no-repeat;
+    /* A háttérkép teljesen kitölti a konténer szélességét és magasságát, megtartva az arányokat, a kép nem torzul */
     background-size: cover;
+    /*(felül, alul, balra, jobbra) 0 margó*/
+    margin: 0;
 }
 
 .cim {
+    /* A pozicionálás abszolút, így a szülő elemhez (header) viszonyítva kerül elhelyezésre */
     position: absolute;
+    /* A bal széléhez igazítja */
     left: 0;
+    /* Az alsó széléhez igazítja */
     bottom: 0;
+    /* Fehér színű szöveg */
     color: white;
+    /* Bal oldali belső margó */
     padding-left: 20px;
+    /* A betűtípus Montserrat */
     font-family: Montserrat;
+    /* A szöveget nagybetűssé alakítja */
     text-transform: uppercase;
 }
 
 .cimsoraim {
+    /* Betűtípus Montserrat */
     font-family: Montserrat;
+    /* A szöveg balra igazítása */
     text-align: left;
+    /* Nagybetűs szöveg */
     text-transform: uppercase;
+    /* Betűméret 2 rem */
     font-size: 2rem;
+    /* Külső margó */
     margin: 30px;
+    /* Bal oldali belső margó */
     padding-left: 15px;
 }
 
 .cimsoraim2 {
+    /* Fekete színű szöveg */
     color: black;
+    /* Betűtípus Montserrat */
     font-family: Montserrat;
+    /* Balra igazított szöveg */
     text-align: left;
+    /* Nagybetűs szöveg */
     text-transform: uppercase;
+    /* Betűméret 2 rem */
     font-size: 2rem;
+    /* Külső margó */
     margin: 30px;
+    /* Bal oldali belső margó */
     padding-left: 15px;
 }
 
 .vilagos {
+    /* Fehér színű szöveg */
     color: white;
+    /* Fehér színű bal oldali szegély */
     border-left: 2px solid white;
 }
 
 .sotet {
+     /* Fekete színű szöveg */
     color: black;
+    /* Fekete színű bal oldali szegély */
     border-left: 2px solid black;
 }
 
 .table {
+    /* A táblázat celláinak határvonalai összeolvadnak */
     border-collapse: collapse;
 }
 
 .table-bordered th,
 .table-bordered td,
 .table-bordered thead th {
+    /* A táblázat celláinak szegélye fekete színű és 1px vastag */
     border: 1px solid black;
 }
 
 #tortenet p,
 #tortenet h4,
 #szereplok {
+    /* Betűtípus Montserrat-ra */
     font-family: Montserrat;
 }
-
+.cimsoraim2 {
+    visibility: hidden; /* Az elem láthatatlan, de a helye megmarad */
+}
 #tortenet,
 #videok,
 #galeria {
+    /* háttérszín fekete 10% ban átlátszó */
     background-color: rgba(0, 0, 0, 0.9);
 }
 
 #megtekintheto,
 #szereplok {
+    /*háttérszín világos sárga*/
     background-color: #f3f29d;
 }
 
 #tortenet {
+    /* Fehér színű szöveg */
     color: white;
+    /* szöveg igazítása sorkizárt módra */
     text-align: justify;
 }
 
 h4 {
+    /*szöveget nagybetűsre*/
     text-transform: uppercase;
 }
-
+/*Ez az első verzóhoz való, meghagyom ha esetleg változtatnánk*/
 .mainfooter2 {
+    /*A szöveg középre igazítása.*/
     text-align: center;
+    /*A sorok közötti távolság 3 rem (relatív egység) lesz*/
     line-height: 3rem;
+    /*A jobb margó -1 rem, ami a tartalom szélességét növeli*/
     margin-right: -1rem;
+    /*A bal margó -1 rem, ami szintén a tartalom szélességét növeli.*/
     margin-left: -1rem;
+    /*A szöveg színe fehér*/
     color: white;
-    background-color: black;
+    /*A háttér színe fekete.*/
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
+
+/*A .cselekmeny osztályú elem sorainak magassága 2.5 rem.*/
 .cselekmeny {
     line-height: 2.5rem;
 }
-
+/*A .tortenet_adatok osztályú elem sorainak magassága 1.5 rem.*/
 .tortenet_adatok {
     line-height: 1.5rem;
 }
-
-#videok {
-    background-size: cover;
-}
-
-#galeria {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.galeria {
-    position: relative;
-    /* Pozícionálás biztosítása az elem saját, normál helyzetéhez viszonyítva */
-    max-height: 100%;
-    display: block;
-    justify-content: center;
-}
-
-
-
 
 /*-------------------------------------------------------------------------*/
 /*másnaposok 1 speci*/
