@@ -501,8 +501,11 @@ header {
     text-align: justify;
 }
 #megtekintheto .img-container img:hover {
+    /*felnagyítja a képet 105%-ra, amikor az egér fölé kerül*/
     transform: scale(1.05);
+    /*árnyékot tesz a kép köré*/
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /*a nagyítás és árnyék 0.3 másodperc alatt történik, sima gyorsulással-lassulással*/
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
