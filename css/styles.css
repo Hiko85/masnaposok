@@ -500,6 +500,11 @@ header {
     /* szöveg igazítása sorkizárt módra */
     text-align: justify;
 }
+#megtekintheto .img-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 h4 {
     /*szöveget nagybetűsre*/
