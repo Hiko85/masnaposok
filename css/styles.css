@@ -400,14 +400,18 @@ header {
 .cim {
     /* A pozicionálás abszolút, így a szülő elemhez (header) viszonyítva kerül elhelyezésre */
     position: absolute;
-    /* A bal széléhez igazítja */
+    /*a szülőelemének a tetejétől számítva 10 képpixel távolságra lesz lefelé tolva*/
+    top: 10px;
+    /* A bal széléhez igazítja, az elem baloldala hozzá van feszítve a szülőhöz (a header-hez)*/
     left: 0;
-    /* Az alsó széléhez igazítja */
-    bottom: 0;
+    /* Az jobb széléhez igazítja, az elem jobb oldala hozzá van feszítve a szülőhöz (a header-hez) */
+    right: 0;
+    /*az elem csak akkorára nő, amekkora a szöveg (nem veszi fel a teljes szélességet*/
+    width: fit-content;
+    /*vízszintesen középre igazítja az elemet*/
+    margin: auto;
     /* Fehér színű szöveg */
     color: white;
-    /* Bal oldali belső margó */
-    padding-left: 20px;
     /* A betűtípus Montserrat */
     font-family: Montserrat;
     /* A szöveget nagybetűssé alakítja */
